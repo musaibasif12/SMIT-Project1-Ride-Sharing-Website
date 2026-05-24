@@ -1,69 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RideShare — Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .hero {padding: 6rem 0; background: linear-gradient(90deg,#0d6efd22,#6610f422);} 
-        .feature {padding: 2rem 1rem}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">RideShare</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="btn btn-primary ms-2" href="#">Get Started</a></li>
-                </ul>
+    <!-- Navbar -->
+    <nav>
+        <div class="container-navbar">
+            <img src="./Logo.png" alt="Logo">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">How tere works</a>
+                <a href="#">Tere Benefits</a>
+                <button> Help Center </button>
             </div>
+
         </div>
     </nav>
+    <!-- ------------------------ -->
 
-    <header class="hero text-center text-dark">
-        <div class="container">
-            <h1 class="display-5">Share rides, save time</h1>
-            <p class="lead">Fast, safe and convenient ride-sharing for your city commute.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Book a Ride</a></p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-1-hero">
+            <h1>DOWNLOAD APP,<br>
+                SAVE MONEY, MAKE <br>
+                FRIENDS! </h1>
+            <p>Its simple and its free. Play your part in reducing <br> Carbon Footprint and help Mother Nature to
+                <br>sustain its beauty. So what are you waiting for ? <br> Lets ride together
+            </p>
+
+            <div class="hero-section-buttons">
+                <button class="playstore-button">
+                    <i class="fa-brands fa-google-play"></i>DOWNLOAD</button>
+                <button class="appstore-button">
+                    <i class="fa-brands fa-app-store"></i>DOWNLOAD</button>
+            </div>
         </div>
-    </header>
 
-    <main class="container my-5">
-        <section id="features" class="row text-center">
-            <div class="col-md-4 feature">
-                <h4>Easy Booking</h4>
-                <p>Find and book nearby rides in seconds.</p>
-            </div>
-            <div class="col-md-4 feature">
-                <h4>Trusted Drivers</h4>
-                <p>Verified drivers with ratings and reviews.</p>
-            </div>
-            <div class="col-md-4 feature">
-                <h4>Affordable</h4>
-                <p>Smart route matching keeps costs low.</p>
-            </div>
-        </section>
 
-        <section id="about" class="mt-5">
-            <h3>About RideShare</h3>
-            <p>Starter template for your ride-sharing website. Replace this content with your app's features and calls-to-action.</p>
-        </section>
-    </main>
-
-    <footer id="contact" class="bg-light py-4">
-        <div class="container text-center">
-            <small>&copy; 2026 RideShare. All rights reserved.</small>
+        <div class="container-2-hero">
+            <img src="./Hero-Section-image.png" alt="Image">
         </div>
-    </footer>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="section-2">
+        <div class="container-section-2">
+            <p>Let's go. Get a link <br>to download the app</p>
+            <form action="">
+                <input type="text" placeholder="Enter mobile number">
+            </form>
+
+            <button>Apply To Drive</button>
+        </div>
+    </section>
 </body>
+
 </html>
