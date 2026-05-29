@@ -89,8 +89,9 @@ body {
 
 .container-1-hero>p {
     font-family: poppins, sans-serif;
-    padding: 10px 0px;
     font-size: 18px;
+
+    padding: 10px 0px;
     color: #969696;
 }
 
@@ -119,6 +120,14 @@ body {
     padding: 12px 32px;
 }
 
+.playstore-button:hover {
+    background-color: #1c1c1c;
+}
+
+.playstore-button:active {
+    background-color: #282828;
+}
+
 
 .appstore-button {
 
@@ -139,25 +148,86 @@ body {
     padding: 12px 32px;
 }
 
-.container-section-2{
+.appstore-button:hover {
+    background-color: #1c1c1c;
+}
+
+.appstore-button:active {
+    background-color: #282828;
+}
+
+/* ------------------------- */
+
+
+.container-section-2 {
+
+
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    /* gap: 150px; */
 
     background-color: #75BF7A;
+
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 400px;
+
+    padding: 30px 80px;
+    margin: 40px 20px;
 }
 
-.container-section-2>button{
-    padding: 12px 28px;
+.section-2-input {
+    display: flex;
+    gap: 20px;
+}
+
+
+.section-2-input>button {
+
+    padding: 12px 42px;
+
     border: none;
     border-radius: 5px;
+
     background-color: #000000;
     color: white;
+
     font-family: "DM Sans", sans-serif;
-    font-weight: 600px;
+    font-weight: 600;
+    font-size: 20px;
+
+    text-transform: uppercase;
+}
+
+.section-2-input>button:hover {
+    background-color: #1c1c1c;
+}
+
+.section-2-input>button:active {
+    background-color: #282828;
 }
 
 
+.section-2-para {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 
+}
+
+input {
+    min-width: 500px;
+    height: 40px;
+
+    /* margin: 0px 10px 0px 150px; */
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 3px 20px;
+
+    font-size: 18px;
+
+
+
+}
