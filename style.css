@@ -4,6 +4,9 @@
 
 * {
     font-family: "DM Sans", sans-serif;
+   
+  outline: 1px solid red;
+
 }
 
 /* Body*/
@@ -20,7 +23,7 @@ body {
     justify-content: space-between;
     /* margin: 30px 80px; */
     padding: 30px 80px;
-    
+
 
 }
 
@@ -30,6 +33,12 @@ body {
     display: flex;
     gap: 45px;
     align-items: center;
+}
+
+.bars {
+    visibility: hidden;
+    font-size: 12px;
+
 }
 
 /* Navbar-buttons */
@@ -88,8 +97,9 @@ body {
 
 .container-2-hero {
     display: flex;
-    justify-content: center;
-    margin: 20px 40px;
+    justify-content: flex-end;
+    width: 100%;
+    /* margin: 20px 40px; */
 }
 
 .container-1-hero>p {
@@ -181,7 +191,7 @@ body {
     border-radius: 10px;
 
     padding: 30px 80px;
-    
+
 }
 
 .section-2-input {
@@ -388,7 +398,8 @@ span {
 
 .dottes {
     display: flex;
-    justify-content: center;
+    
+    align-self: center;
     margin-top: 100px;
 }
 
@@ -421,8 +432,8 @@ span {
 
 .rectangle-1 {
     display: flex;
-    width: 1060px;
-    height: 304px;
+    max-width: 1060px;
+    min-height: 304px;
     background-color: #f1f1f1;
     justify-content: space-between;
     align-items: center;
@@ -496,8 +507,8 @@ span {
 
 .rectangle-2 {
     display: flex;
-    width: 1060px;
-    height: 304px;
+   max-width: 1060px;
+    min-height: 304px;
     background-color: #f1f1f1;
     justify-content: space-between;
     align-items: center;
@@ -579,8 +590,8 @@ span {
 
 .rectangle-3 {
     display: flex;
-    width: 1060px;
-    height: 304px;
+    max-width: 1060px;
+    min-height: 304px;
     background-color: #f1f1f1;
     justify-content: space-between;
     align-items: center;
@@ -746,7 +757,106 @@ footer {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin-top:50px;
+    margin-top: 50px;
 
     color: #75BF7A;
+
+
+}
+
+/* --------------------------------------- */
+
+@media (max-width: 1380px) {
+
+    .bars {
+        visibility: visible;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-2-hero{
+        justify-content: center;
+    }
+    .container-1-hero{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .container-section-2{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-2-input{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input{
+        min-width: 300px;
+    }
+
+    .container-section-4{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;}
+
+        .center{
+            order: -1;
+        }
+
+        .one, .two, .three, .four{
+            align-items: center;
+            text-align: center;
+        }
+
+        .one>p, .two>p, .three>p, .four>p{
+            text-align: center;
+        }
+
+
+        .dottes{
+            order: -2;
+        }
+
+        .rectangle-1 {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+
+     /* .container-1-hero>h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+     .container-1-hero>p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+     .section-2-input {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+     input {
+        min-width: 300px;
+    } */
+
+   
+    
+    
 }
